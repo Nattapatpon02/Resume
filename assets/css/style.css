@@ -100,15 +100,16 @@ section.Content {
 
     }
 
+    #position {
+        color: #526D82;
+    }
+
     section.personal-information {
         .row {
             justify-content: space-between;
         }
 
 
-        #position {
-            color: #526D82;
-        }
 
         .contact {
 
@@ -177,6 +178,16 @@ section.Content {
         }
     }
 
+    section.work-experience {
+        .row {
+            .card {
+                .title {
+                    padding: 0 15px;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
 
 
 }
