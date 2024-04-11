@@ -194,10 +194,19 @@ section.Content {
 
 /* Footer */
 section.Footer {
-    position: sticky;
+    /* position: sticky; */
+    font-size: 16px;
     bottom: 0;
-    height: 50px;
+    padding: 15px 15px;
     background: #27374D;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+    a {
+        color: #fff;
+    }
+
 }
 
 /* Footer */
