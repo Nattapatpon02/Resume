@@ -26,8 +26,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #27374D;
-
 
 }
 
@@ -88,7 +86,6 @@ section.Content {
     border: 0;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
-    min-height: 100vh;
     margin: 15px auto;
     background-color: #fff;
     padding: 15px;
@@ -189,7 +186,24 @@ section.Content {
         }
     }
 
+    section.project {
+        .card {
+            padding: 15px 15px;
+            margin: 15px auto;
+            width: 100%;
+            transform: scale(1);
+            transition: all .3s ease-in-out;
 
+            cursor: pointer;
+
+            &:hover {
+
+                transform: scale(1.01);
+                box-shadow: 1px 1px 8px rgba(0, 0, 0, .2);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
 }
 
 /* Footer */
