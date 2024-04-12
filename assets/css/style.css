@@ -174,10 +174,7 @@ section.Content {
                 transform: scale(1.02) !important;
                 transition: transform .2s ease-in-out !important;
 
-                .click-more-detail {
-                    color: rgb(196, 0, 0);
-                    opacity: 1;
-                }
+
             }
 
 
@@ -302,16 +299,24 @@ section.Footer {
 
 /* Responsive */
 .card {
+    .click-more-detail {
+
+        opacity: .6;
+        transition: all .3s ease-in-out;
+    }
+
     &:hover {
         .click-more-detail {
             color: rgb(196, 0, 0);
             opacity: 1;
+            transition: all .3s ease-in-out;
         }
     }
 }
 
 .hightlight-red {
     color: rgb(146, 0, 0);
+
 }
 
 #card-more {
