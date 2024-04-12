@@ -84,7 +84,7 @@
       <div class="row">
 
         <div class="col-sm-3 col-md-6">
-          <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal" id="card-more">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#Education1" id="card-more">
             <img src="https://nattapatpon10.github.io/Resume/src/images/Npru.jpg" alt="">
             <div class="title">
               <h3>ปริญญาตรี</h3>
@@ -93,18 +93,19 @@
               <h4>วิทยาศาสตรบัณฑิต สาขาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฏนครปฐม
                 [2020 - 2024]<br>GPA 3.64
               </h4>
-              <h4></h4>
+              <h4 class="text-end click-more-detail">คลิกเพื่อดูเพิ่มเติม</h4>
             </div>
           </div>
         </div>
         <div class="col-sm-3 col-md-6">
-          <div class="card">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#Education2">
             <img src="https://nattapatpon10.github.io/Resume/src/images/Wangklaikangwol.jpg" alt="">
             <div class="title">
               <h3>ประกาศนียบัตรวิชาชีพ</h3>
               <h3 class="university">วิทยาลัยการอาชีพวังไกลกังวล</h3>
               <hr>
               <h4>ประกาศนียบัตรวิชาชีพ สาขาคอมพิวเตอร์ธุรกิจ วิทยาลัยการอาชีพวังไกลกังวล [2016 - 2019]<br>GPA 3.16</h4>
+              <h4 class="text-end click-more-detail">คลิกเพื่อดูเพิ่มเติม</h4>
             </div>
 
           </div>
@@ -146,7 +147,7 @@
               <h3 id="position">ธันวาคม 2023 - เมษายน 2024 (4 เดือน) </h3>
               <hr>
               <h4>ตำแหน่ง Front-End Developer</h4>
-              <h4>พัฒนาหน้าเว็บตามที่ได้รับมอบหมายต่อจากทีม Web Design</h4>
+              <h4>พัฒนาหน้าเว็บตามที่ได้รับมอบหมายหลังจากที่ลูกค้ายืนยันงานจากทีม Web Design</h4>
               <h4>ภาษาที่ใช้ในการพัฒนา</h4>
               <h4>
                 <ul>
@@ -165,11 +166,12 @@
 
     <section class="project">
       <h2>โปรเจค (Project)</h2>
-      <div class="card">
+      <div class="card" data-bs-toggle="modal" data-bs-target="#Project1">
         <h4>2024</h4>
         <h4> &nbsp; &nbsp;การพัฒนาเว็บแอปพลิเคชันการแจ้งลาเรียน กรณีศึกษา สาขาเทคโนโลยีสารสนเทศ
           มหาวิทยาลัยราชภัฏนครปฐม
         </h4>
+        <h4 class="text-end click-more-detail">คลิกเพื่อดูเพิ่มเติม</h4>
       </div>
 
     </section>
@@ -199,7 +201,8 @@
 
 
   <!-- Modal -->
-  <div class="modal fade modal-more" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  <!-- Education -->
+  <div class="modal fade modal-more" id="Education1" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -233,11 +236,97 @@
             </ul>
           </h4>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+          <a href="assets/download/Transcript.pdf" target="_blank" type="button" class="btn btn-primary">ดู
+            transcript</a>
+        </div>
 
       </div>
     </div>
   </div>
 
+  <div class="modal fade modal-more" id="Education2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลเพิ่มเติม</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>ประกาศนียบัตรวิชาชีพ</h3>
+          <h3 class="university">วิทยาลัยการอาชีพวังไกลกังวล</h3>
+
+          <h4>ประกาศนียบัตรวิชาชีพ สาขาคอมพิวเตอร์ธุรกิจ วิทยาลัยการอาชีพวังไกลกังวล [2016 - 2019]<br>GPA 3.16</h4>
+
+          <hr>
+          <h3>วิชาที่เกี่ยวข้อง</h3>
+          <h4>
+            ไม่มีข้อมูล
+          </h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+          <button href="" target="_blank" type="button" class="btn btn-primary" disabled>ดู
+            transcript</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+  <div class="modal fade modal-more" id="Project1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">ข้อมูลเพิ่มเติม</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>โปรเจคจบ</h3>
+          <h3 class="university">มหาวิทยาลัยราชภัฏนครปฐม</h3>
+
+          <h4>2024</h4>
+          <h4> &nbsp; &nbsp;การพัฒนาเว็บแอปพลิเคชันการแจ้งลาเรียน กรณีศึกษา สาขาเทคโนโลยีสารสนเทศ
+            มหาวิทยาลัยราชภัฏนครปฐม
+          </h4>
+          <hr>
+          <h4>ภาษา / โปรแกรมที่ใช้ในการพัฒนา
+
+            <ul>
+              <li>
+                ReactJS
+              </li>
+              <li>
+                Nodejs
+              </li>
+              <li>
+                Express
+              </li>
+              <li>
+                Mogodb
+              </li>
+              <li>
+                Css
+              </li>
+              <li>
+                Google App Script
+              </li>
+              <li>
+                Google Sheets
+              </li>
+            </ul>
+          </h4>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+          <a href="https://student-leave.netlify.app/" target="_blank" type="button"
+            class="btn btn-primary">ดูชิ้นงาน</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 

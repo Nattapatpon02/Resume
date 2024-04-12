@@ -153,6 +153,8 @@ section.Content {
             transform: scale(1.0) !important;
             transition: transform .2s ease-in-out !important;
 
+
+
             img {
                 border-radius: 7px 7px 0px 0px;
             }
@@ -166,9 +168,16 @@ section.Content {
                 }
             }
 
+            cursor: pointer;
+
             &:hover {
                 transform: scale(1.02) !important;
                 transition: transform .2s ease-in-out !important;
+
+                .click-more-detail {
+                    color: rgb(196, 0, 0);
+                    opacity: 1;
+                }
             }
 
 
@@ -201,6 +210,8 @@ section.Content {
                 transform: scale(1.01);
                 box-shadow: 1px 1px 8px rgba(0, 0, 0, .2);
                 transition: all .3s ease-in-out;
+
+
             }
         }
     }
@@ -290,6 +301,15 @@ section.Footer {
 }
 
 /* Responsive */
+.card {
+    &:hover {
+        .click-more-detail {
+            color: rgb(196, 0, 0);
+            opacity: 1;
+        }
+    }
+}
+
 .hightlight-red {
     color: rgb(146, 0, 0);
 }
