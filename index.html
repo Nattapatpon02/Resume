@@ -70,6 +70,10 @@
         <div class="col-sm-12 col-md-6">
           <h1 id="name">ณัฐพัฒน์พณ มณีฉายจิดาภา</h1>
           <h2 id="position">Front End Developer</h2>
+          <h4>เกิดวันที่ : 10 มิถุนายน พ.ศ. 2545</h4>
+          <h4 id="result"></h4>
+          <h4>เชื้อชาติ : ไทย</h4>
+          <h4>สัญชาติ : ไทย</h4>
         </div>
         <div class="col-sm-3 col-md-6 contact">
           <h4> <i class="bi bi-telephone-fill"></i> : 092-7829845</h4>
@@ -78,6 +82,7 @@
           <h4> <a href="https://www.facebook.com/Nattapatpon10" target="_blank"><i class="bi bi-facebook"></i> : N'Nat
               NaJa</a></h4>
           <h4> <i class="bi bi-line"></i> : nutrocker</h4>
+          <h4> <i class="fas fa-house "></i> : 20/276 ซ.เขาพิทักษ์11 ต.หัวหิน อ.หัวหิน <br> จ.ประจวบคีรีขันธ์ 77110</h4>
         </div>
       </div>
     </section>
@@ -396,6 +401,28 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+  <script>
+    window.onload = function () {
+      calculateAge();
+    };
+
+    function calculateAge() {
+      var birthdate = "2002-06-10";
+      var today = new Date();
+      var birthDate = new Date(birthdate);
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      document.getElementById("result").innerHTML = "อายุ : " + age + " ปี";
+    }
+  </script>
 </body>
 
 
