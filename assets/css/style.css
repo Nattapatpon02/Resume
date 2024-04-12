@@ -290,3 +290,18 @@ section.Footer {
 }
 
 /* Responsive */
+.hightlight-red {
+    color: rgb(146, 0, 0);
+}
+
+#card-more {
+    cursor: pointer;
+}
+
+.modal-more {
+    .modal-dialog {
+        margin: 15px auto;
+        max-width: 1000px;
+        width: 90%;
+    }
+}
